@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE HTML>
-<html    lang="en">
+<html lang="en">
+
 <head>
 	<title>sharepoem</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,63 +9,61 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
-		
-		
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				天与地， <br/>
- 
-				并不如想象般，  <br/>
-				
-				湛蓝与肥沃。  <br/>
-				
-				降生和死亡，  <br/>
-				
-				我们无权过问，  <br/>
-				
-				上天的赋予和剥夺。  <br/>
-				
-				但，愿你，  <br/>
-				
+				天与地， <br />
+
+				并不如想象般， <br />
+
+				湛蓝与肥沃。 <br />
+
+				降生和死亡， <br />
+
+				我们无权过问， <br />
+
+				上天的赋予和剥夺。 <br />
+
+				但，愿你， <br />
+
 				简单，却富有生命力。
 			</div>
 			<div id="loveHeart">
-				 <canvas id="garden"></canvas>
-				<!-- <div id="words">
+				<canvas id="garden"></canvas>
+				<div id="words">
 					<div id="messages">
-						XX，我一直都陪着你
+						王诗琦，我一直都陪着你
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Accompany <br/>
-								forever and ever!<br/>
-						<div class="signature">- hackerZhang</div>
+						Accompany <br />
+						forever and ever!<br />
+						<div class="signature">- Wenliang Zhang</div>
 					</div>
-				</div> -->
-			</div> 
+				</div>
+			</div>
 		</div>
 		<div id="copyright">
 
-			<a href="https://beian.miit.gov.cn/" id ="icp">豫ICP备17011898号</a>  <br/>
-			© 2018 cszhang   拼着一切代价，奔你的前程！  
+			<a href="https://beian.miit.gov.cn/" id="icp">豫ICP备17011898号</a> <br />
+			© 2018 cszhang 拼着一切代价，奔你的前程！
 		</div>
 	</div>
 	<script type="text/javascript">
-		var icp_a= document.getElementById('icp');
-	 
-		if (window.parent.document.location.href.includes("sharepoem")){
-			icp_a.innerText="豫ICP备17011898号-2"
-		}else if (href.includes("cszhang")){
-			icp_a.innerText="豫ICP备17011898号-1"
+		var icp_a = document.getElementById('icp');
+
+		if (window.parent.document.location.href.includes("sharepoem")) {
+			icp_a.innerText = "豫ICP备17011898号-2"
+		} else if (href.includes("cszhang")) {
+			icp_a.innerText = "豫ICP备17011898号-1"
 		}
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -74,16 +73,16 @@
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
-		
+
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
 			document.body.appendChild(msg);
 			$("#code").css("display", "none")
 			$("#copyright").css("position", "absolute");
 			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
+			document.execCommand("stop");
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
@@ -98,7 +97,7 @@
 			$("#code").typewriter();
 		}
 	</script>
-	<audio autoplay="autoplay"  loop="loop"
-	src="1.mp3"\>
+	<audio autoplay="autoplay" loop="loop" src="1.mp3" \>
 </body>
+
 </html>
